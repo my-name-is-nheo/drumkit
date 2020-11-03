@@ -2,6 +2,10 @@ h1 {
   color: white;
   font-family: Apple Chancery, cursive;
 }
+img.drums {
+  display: block;
+  margin: 0 auto;
+}
 h5 {
   color: white;
   font-family: Apple Chancery, cursive;

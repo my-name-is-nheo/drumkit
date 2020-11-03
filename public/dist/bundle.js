@@ -579,6 +579,8 @@ class DrumKit extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
       id: "drumkit"
     }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      class: "drums",
+      draggable: "false",
       src: "/images/drumkit.png"
     }));
   }

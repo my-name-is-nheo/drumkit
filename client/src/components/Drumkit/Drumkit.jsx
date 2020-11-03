@@ -8,7 +8,7 @@ export default class DrumKit extends Component {
   render() {
     return (
       <div id="drumkit">
-        <img src={"/images/drumkit.png"} />
+        <img class="drums" draggable="false" src={"/images/drumkit.png"} />
       </div>
     );
   }
