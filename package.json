@@ -18,6 +18,8 @@
     "@babel/preset-typescript": "^7.10.4",
     "babel-loader": "^8.1.0",
     "babel-register": "^6.26.0",
+    "css-loader": "^5.0.0",
+    "style-loader": "^2.0.0",
     "webpack": "^2.2.1",
     "webpack-cli": "^3.3.12"
   },
