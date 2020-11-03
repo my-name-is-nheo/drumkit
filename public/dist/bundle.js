@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -264,9 +264,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(12);
+  module.exports = __webpack_require__(14);
 } else {
-  module.exports = __webpack_require__(11);
+  module.exports = __webpack_require__(13);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -385,7 +385,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(8);
+  var ReactPropTypesSecret = __webpack_require__(10);
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -486,9 +486,9 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(18);
 } else {
-  module.exports = __webpack_require__(15);
+  module.exports = __webpack_require__(17);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -500,13 +500,15 @@ if (process.env.NODE_ENV === 'production') {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Title_Title_jsx__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Title_Title_jsx__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Drumkit_Drumkit_jsx__ = __webpack_require__(7);
+
 
 
 
 class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
-    return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Title_Title_jsx__["a" /* default */], null));
+    return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Title_Title_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Drumkit_Drumkit_jsx__["a" /* default */], null));
   }
 
 }
@@ -552,15 +554,56 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(10);
+  module.exports = __webpack_require__(12);
 } else {
-  module.exports = __webpack_require__(9);
+  module.exports = __webpack_require__(11);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+class DrumKit extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      id: "drumkit"
+    }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      src: "/images/drumkit.png"
+    }));
+  }
+
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = DrumKit;
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = Title;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+function Title() {
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    id: "title"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, "The Interactive Drum Kit"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h5", null, "By Nicholas Heo"));
+}
+
+/***/ }),
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -576,7 +619,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__App_jsx__["a" /* default */], null), document.getElementById("root"));
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -595,7 +638,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -620,7 +663,7 @@ var React = __webpack_require__(1);
 var _assign = __webpack_require__(2);
 var Scheduler = __webpack_require__(4);
 var checkPropTypes = __webpack_require__(3);
-var tracing = __webpack_require__(17);
+var tracing = __webpack_require__(19);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED; // Prevent newer renderers from RTE when used with older react package versions.
 // Current owner and dispatcher used to share the same ref,
@@ -25615,7 +25658,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25914,7 +25957,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!gk(c))throw Er
 
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27834,7 +27877,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27866,7 +27909,7 @@ exports.useLayoutEffect=function(a,b){return Z().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28223,7 +28266,7 @@ exports.unstable_wrap = unstable_wrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28240,7 +28283,7 @@ var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unst
 
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29106,7 +29149,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29134,34 +29177,19 @@ exports.unstable_shouldYield=function(){var a=exports.unstable_now();V(a);var b=
 
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(14);
+  module.exports = __webpack_require__(16);
 } else {
-  module.exports = __webpack_require__(13);
+  module.exports = __webpack_require__(15);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 18 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = Title;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-
-function Title() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    id: "title"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, "The Interactive Drum Kit"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h5", null, "By Nicholas Heo"));
-}
 
 /***/ })
 /******/ ]);

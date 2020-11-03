@@ -1,0 +1,15 @@
+h1 {
+  color: white;
+  font-family: Apple Chancery, cursive;
+}
+h5 {
+  color: white;
+  font-family: Apple Chancery, cursive;
+}
+#title {
+  text-align: center;
+  border: 3px solid white;
+}
+body {
+  background-color: black;
+}
