@@ -1,0 +1,8 @@
+h1 {
+  color: blue;
+  font-family: Apple Chancery, cursive;
+}
+#title {
+  text-align: center;
+  border: 3px solid blue;
+}
