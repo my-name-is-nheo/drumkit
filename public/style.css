@@ -2,9 +2,90 @@ h1 {
   color: white;
   font-family: Apple Chancery, cursive;
 }
+button {
+  pointer-events: none;
+  resize: auto;
+}
+#bass {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-68%, -600%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#snare {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: rotate(-10deg) translate(-387%, -670%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#low-tom {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: rotate(43deg) translate(-221%, -433%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#med-tom {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: rotate(3deg) translate(-252%, -376px);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#high-tom {
+  position: relative;
+  top: 60%;
+  left: 37%;
+  transform: rotate(-2deg) translate(-244%, -392px);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
 img.drums {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 h5 {
   color: white;
@@ -16,4 +97,7 @@ h5 {
 }
 body {
   background-color: black;
+  overflow: hidden;
+  height: 90vh;
+  resize: auto;
 }
