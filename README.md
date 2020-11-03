@@ -1,2 +1,1 @@
-# ERN--Boilerplate
 # drumkit
