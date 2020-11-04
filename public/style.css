@@ -21,6 +21,21 @@ button {
   border-radius: 5px;
   text-align: center;
 }
+#crash-2 {
+  position: relative;
+  top: 60%;
+  left: 32%;
+  transform: rotate(13deg) translate(-223%, -1110%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
 #snare {
   position: relative;
   top: 60%;
@@ -56,6 +71,51 @@ button {
   top: 60%;
   left: 50%;
   transform: rotate(3deg) translate(-252%, -376px);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#high-hat {
+  position: relative;
+  top: 60%;
+  left: 11%;
+  transform: rotate(-31deg) translate(87%, -214px);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#ride {
+  position: relative;
+  top: 60%;
+  left: 26%;
+  transform: rotate(38deg) translate(11%, -317px);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#crash {
+  position: relative;
+  top: 60%;
+  left: 16%;
+  transform: rotate(-18deg) translate(118%, -414px);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
   color: white;

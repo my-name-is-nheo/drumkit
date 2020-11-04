@@ -673,7 +673,19 @@ var DrumKit = /*#__PURE__*/function (_Component) {
       }, "L"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
         id: "high-tom",
         disabled: "true"
-      }, "K"));
+      }, "K"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "high-hat",
+        disabled: "true"
+      }, "A"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "crash",
+        disabled: "true"
+      }, "S"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "ride",
+        disabled: "true"
+      }, "Space"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "crash-2",
+        disabled: "true"
+      }, "D"));
     }
   }]);
 
