@@ -9,44 +9,44 @@ export default function Legend() {
           <th>Sound</th>
         </tr>
         <tr>
-          <th>A</th>
-          <th>Hi-Hat</th>
+          <td>A</td>
+          <td>Hi-Hat</td>
         </tr>
         <tr>
-          <th>F</th>
-          <th>Snare</th>
+          <td>F</td>
+          <td>Snare</td>
         </tr>
         <tr>
-          <th>J</th>
-          <th>Bass</th>
+          <td>J</td>
+          <td>Bass</td>
         </tr>
         <tr>
-          <th>S</th>
-          <th>Crash</th>
+          <td>S</td>
+          <td>Crash</td>
         </tr>
         <tr>
-          <th>K</th>
-          <th>High Tom</th>
+          <td>K</td>
+          <td>High Tom</td>
         </tr>
         <tr>
-          <th>L</th>
-          <th>Medium Tom</th>
+          <td>L</td>
+          <td>Medium Tom</td>
         </tr>
         <tr>
-          <th>;</th>
-          <th>Low tom</th>
+          <td>;</td>
+          <td>Low tom</td>
         </tr>
         <tr>
-          <th>D</th>
-          <th>Crash II</th>
+          <td>D</td>
+          <td>Crash II</td>
         </tr>
         <tr>
-          <th>Space</th>
-          <th>Ride</th>
+          <td>Space</td>
+          <td>Ride</td>
         </tr>
         <tr>
-          <th>R</th>
-          <th>Record</th>
+          <td>R</td>
+          <td>Record</td>
         </tr>
       </table>
     </div>
