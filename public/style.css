@@ -7,12 +7,12 @@ button {
   resize: auto;
 }
 #drumkit {
-  background-color: blue;
-  position: absolute;
-  top: 169px;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 159px;
 }
 #bass {
   position: relative;
@@ -32,7 +32,7 @@ button {
 #crash-2 {
   position: relative;
   top: 60%;
-  left: 32%;
+  left: 24%;
   transform: rotate(13deg) translate(-223%, -1110%);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
@@ -61,9 +61,8 @@ button {
 }
 #low-tom {
   position: relative;
-  top: 60%;
-  left: 50%;
-  transform: rotate(43deg) translate(-221%, -433%);
+  left: 49%;
+  transform: rotate(43deg) translate(-208%, -384%);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
   color: white;
@@ -92,7 +91,7 @@ button {
 #high-hat {
   position: relative;
   top: 60%;
-  left: 11%;
+  left: -6%;
   transform: rotate(-31deg) translate(87%, -214px);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
@@ -106,8 +105,7 @@ button {
 }
 #ride {
   position: relative;
-  top: 60%;
-  left: 26%;
+  left: 15%;
   transform: rotate(38deg) translate(11%, -317px);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
@@ -121,9 +119,8 @@ button {
 }
 #crash {
   position: relative;
-  top: 60%;
-  left: 16%;
-  transform: rotate(-18deg) translate(118%, -414px);
+  left: -1%;
+  transform: rotate(-16deg) translate(118%, -414px);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
   color: white;
@@ -136,8 +133,7 @@ button {
 }
 #high-tom {
   position: relative;
-  top: 60%;
-  left: 37%;
+  left: 31%;
   transform: rotate(-2deg) translate(-244%, -392px);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
@@ -151,9 +147,6 @@ button {
 }
 img.drums {
   display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
 }
 h5 {
   color: white;
@@ -166,8 +159,6 @@ h5 {
 body {
   background-color: black;
   height: 0;
-  overflow: hidden;
-  padding-top: 591.44px / 1127.34px * 100%;
   background: black;
   position: relative;
 }
