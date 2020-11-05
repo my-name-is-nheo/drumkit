@@ -16,7 +16,6 @@ button {
 }
 #bass {
   position: relative;
-  top: 60%;
   left: 50%;
   transform: translate(-68%, -600%);
   -ms-transform: translate(-50%, -50%);
@@ -31,7 +30,6 @@ button {
 }
 #crash-2 {
   position: relative;
-  top: 60%;
   left: 24%;
   transform: rotate(13deg) translate(-223%, -1110%);
   -ms-transform: translate(-50%, -50%);
@@ -46,7 +44,6 @@ button {
 }
 #snare {
   position: relative;
-  top: 60%;
   left: 50%;
   transform: rotate(-10deg) translate(-387%, -670%);
   -ms-transform: translate(-50%, -50%);
@@ -90,9 +87,23 @@ button {
 }
 #high-hat {
   position: relative;
-  top: 60%;
+
   left: -6%;
   transform: rotate(-31deg) translate(87%, -214px);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#record {
+  position: relative;
+  left: -44%;
+  transform: rotate(-43deg) translate(91%, -88px);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
   color: white;
@@ -131,6 +142,7 @@ button {
   border-radius: 5px;
   text-align: center;
 }
+
 #high-tom {
   position: relative;
   left: 31%;

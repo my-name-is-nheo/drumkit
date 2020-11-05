@@ -39,6 +39,9 @@ export default class DrumKit extends Component {
         <button id="crash-2" disabled="true">
           D
         </button>
+        <button id="record" disabled="true">
+          R
+        </button>
       </div>
     );
   }

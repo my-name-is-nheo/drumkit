@@ -685,7 +685,10 @@ var DrumKit = /*#__PURE__*/function (_Component) {
       }, "Space"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
         id: "crash-2",
         disabled: "true"
-      }, "D"));
+      }, "D"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "record",
+        disabled: "true"
+      }, "R"));
     }
   }]);
 
