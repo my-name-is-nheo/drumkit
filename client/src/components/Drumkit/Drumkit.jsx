@@ -27,7 +27,7 @@ export default class DrumKit extends Component {
         <button id="high-tom" disabled="true">
           K
         </button>
-        <button id="high-hat" disabled="true">
+        <button id="hi-hat" disabled="true">
           A
         </button>
         <button id="crash" disabled="true">
