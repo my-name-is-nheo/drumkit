@@ -606,6 +606,61 @@ var DrumKit = /*#__PURE__*/function (_Component) {
       console.log("button pressed");
     };
 
+    _this.handleKeyPress = function (event) {
+      switch (event.key) {
+        case "J":
+        case "j":
+          console.log("bassed triggered");
+          break;
+
+        case "F":
+        case "f":
+          console.log("snare triggered");
+          break;
+
+        case ";":
+          console.log("low-tom triggered");
+          break;
+
+        case "L":
+        case "l":
+          console.log("med-tom triggered");
+          break;
+
+        case "K":
+        case "k":
+          console.log("high-tom triggered");
+          break;
+
+        case "A":
+        case "a":
+          console.log("hi-hat triggered");
+          break;
+
+        case "S":
+        case "s":
+          console.log("crash triggered");
+          break;
+
+        case " ":
+          console.log("ride triggered");
+          break;
+
+        case "D":
+        case "d":
+          console.log("crash-2 triggered");
+          break;
+
+        case "R":
+        case "r":
+          console.log("record triggered");
+          break;
+
+        default:
+          console.log(event.key);
+      }
+    };
+
     _this.state = {};
     return _this;
   }
@@ -621,27 +676,44 @@ var DrumKit = /*#__PURE__*/function (_Component) {
         src: "/images/drumkit.png"
       }), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
         id: "bass",
-        onClick: function onClick() {
-          console.log("clicked");
-        }
+        onKeyPress: this.handleKeyPress,
+        onClick: this.handleButtonPress
       }, "J"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "snare"
+        id: "snare",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, "F"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "low-tom"
+        id: "low-tom",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, ";"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "med-tom"
+        id: "med-tom",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, "L"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "high-tom"
+        id: "high-tom",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, "K"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "hi-hat"
+        id: "hi-hat",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, "A"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "crash"
+        id: "crash",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, "S"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "ride"
+        id: "ride",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, "Space"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "crash-2"
+        id: "crash-2",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, "D"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "record"
+        id: "record",
+        onClick: this.handleButtonPress,
+        onKeyPress: this.handleKeyPress
       }, "R"));
     }
   }]);
