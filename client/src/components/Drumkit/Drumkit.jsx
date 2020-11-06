@@ -5,43 +5,31 @@ export default class DrumKit extends Component {
     super(props);
     this.state = {};
   }
-  handleKeyPress = (e) => {
-    console.log(e);
+
+  handleButtonPress = () => {
+    console.log("button pressed");
   };
   render() {
     return (
       <div id="drumkit">
         <img className="drums" draggable="false" src={"/images/drumkit.png"} />
-        <button id="bass" disabled="true">
+        <button
+          id="bass"
+          onClick={() => {
+            console.log("clicked");
+          }}
+        >
           J
         </button>
-        <button id="snare" disabled="true">
-          F
-        </button>
-        <button id="low-tom" disabled="true">
-          ;
-        </button>
-        <button id="med-tom" disabled="true">
-          L
-        </button>
-        <button id="high-tom" disabled="true">
-          K
-        </button>
-        <button id="hi-hat" disabled="true">
-          A
-        </button>
-        <button id="crash" disabled="true">
-          S
-        </button>
-        <button id="ride" disabled="true">
-          Space
-        </button>
-        <button id="crash-2" disabled="true">
-          D
-        </button>
-        <button id="record" disabled="true">
-          R
-        </button>
+        <button id="snare">F</button>
+        <button id="low-tom">;</button>
+        <button id="med-tom">L</button>
+        <button id="high-tom">K</button>
+        <button id="hi-hat">A</button>
+        <button id="crash">S</button>
+        <button id="ride">Space</button>
+        <button id="crash-2">D</button>
+        <button id="record">R</button>
       </div>
     );
   }

@@ -17,10 +17,9 @@ th {
   text-align: left;
   padding: 8px;
 }
-tr {
-}
+
 button {
-  pointer-events: none;
+  outline: none;
   resize: auto;
 }
 #drumkit {
@@ -104,7 +103,6 @@ button {
 }
 #hi-hat {
   position: relative;
-
   left: -6%;
   transform: rotate(-31deg) translate(87%, -214px);
   -ms-transform: translate(-50%, -50%);
