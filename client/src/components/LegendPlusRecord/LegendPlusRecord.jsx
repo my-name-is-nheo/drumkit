@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Legend extends Component {
+export default class LegendPlusRecord extends Component {
   render() {
     return (
       <div id="legend">
