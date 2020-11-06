@@ -2,6 +2,23 @@ h1 {
   color: white;
   font-family: Apple Chancery, cursive;
 }
+#legend {
+  float: right;
+}
+table {
+  background-color: black;
+  width: 10%;
+  border-collapse: collapse;
+  color: white;
+}
+td,
+th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+}
+tr {
+}
 button {
   pointer-events: none;
   resize: auto;

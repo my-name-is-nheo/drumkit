@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -264,9 +264,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(14);
+  module.exports = __webpack_require__(12);
 } else {
-  module.exports = __webpack_require__(13);
+  module.exports = __webpack_require__(11);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -385,7 +385,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(10);
+  var ReactPropTypesSecret = __webpack_require__(8);
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -486,9 +486,9 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(18);
+  module.exports = __webpack_require__(16);
 } else {
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(15);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -500,8 +500,9 @@ if (process.env.NODE_ENV === 'production') {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Title_Title_jsx__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Drumkit_Drumkit_jsx__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Title_Title_jsx__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Drumkit_Drumkit_jsx__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Legend_Legend_jsx__ = __webpack_require__(19);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -528,6 +529,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -542,7 +544,7 @@ var App = /*#__PURE__*/function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Title_Title_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Drumkit_Drumkit_jsx__["a" /* default */], null));
+      return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Title_Title_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Drumkit_Drumkit_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Legend_Legend_jsx__["a" /* default */], null));
     }
   }]);
 
@@ -590,130 +592,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(12);
+  module.exports = __webpack_require__(10);
 } else {
-  module.exports = __webpack_require__(11);
+  module.exports = __webpack_require__(9);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DrumKit; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-var DrumKit = /*#__PURE__*/function (_Component) {
-  _inherits(DrumKit, _Component);
-
-  var _super = _createSuper(DrumKit);
-
-  function DrumKit(props) {
-    var _this;
-
-    _classCallCheck(this, DrumKit);
-
-    _this = _super.call(this, props);
-
-    _this.handleKeyPress = function (e) {
-      console.log(e);
-    };
-
-    _this.state = {};
-    return _this;
-  }
-
-  _createClass(DrumKit, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        id: "drumkit"
-      }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-        className: "drums",
-        draggable: "false",
-        src: "/images/drumkit.png"
-      }), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "bass",
-        disabled: "true"
-      }, "J"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "snare",
-        disabled: "true"
-      }, "F"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "low-tom",
-        disabled: "true"
-      }, ";"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "med-tom",
-        disabled: "true"
-      }, "L"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "high-tom",
-        disabled: "true"
-      }, "K"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "high-hat",
-        disabled: "true"
-      }, "A"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "crash",
-        disabled: "true"
-      }, "S"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "ride",
-        disabled: "true"
-      }, "Space"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "crash-2",
-        disabled: "true"
-      }, "D"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        id: "record",
-        disabled: "true"
-      }, "R"));
-    }
-  }]);
-
-  return DrumKit;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = Title;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-
-function Title() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    id: "title"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, "The Interactive Drum Kit"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h5", null, "By Nicholas Heo"));
-}
-
-/***/ }),
-/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -729,7 +616,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__App_jsx__["a" /* default */], null), document.getElementById("root"));
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -748,7 +635,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -773,7 +660,7 @@ var React = __webpack_require__(1);
 var _assign = __webpack_require__(2);
 var Scheduler = __webpack_require__(4);
 var checkPropTypes = __webpack_require__(3);
-var tracing = __webpack_require__(19);
+var tracing = __webpack_require__(17);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED; // Prevent newer renderers from RTE when used with older react package versions.
 // Current owner and dispatcher used to share the same ref,
@@ -25768,7 +25655,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26067,7 +25954,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!gk(c))throw Er
 
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27987,7 +27874,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28019,7 +27906,7 @@ exports.useLayoutEffect=function(a,b){return Z().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28376,7 +28263,7 @@ exports.unstable_wrap = unstable_wrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28393,7 +28280,7 @@ var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unst
 
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29259,7 +29146,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29287,19 +29174,191 @@ exports.unstable_shouldYield=function(){var a=exports.unstable_now();V(a);var b=
 
 
 /***/ }),
-/* 19 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(14);
 } else {
-  module.exports = __webpack_require__(15);
+  module.exports = __webpack_require__(13);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DrumKit; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+var DrumKit = /*#__PURE__*/function (_Component) {
+  _inherits(DrumKit, _Component);
+
+  var _super = _createSuper(DrumKit);
+
+  function DrumKit(props) {
+    var _this;
+
+    _classCallCheck(this, DrumKit);
+
+    _this = _super.call(this, props);
+
+    _this.handleKeyPress = function (e) {
+      console.log(e);
+    };
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(DrumKit, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        id: "drumkit"
+      }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+        className: "drums",
+        draggable: "false",
+        src: "/images/drumkit.png"
+      }), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "bass",
+        disabled: "true"
+      }, "J"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "snare",
+        disabled: "true"
+      }, "F"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "low-tom",
+        disabled: "true"
+      }, ";"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "med-tom",
+        disabled: "true"
+      }, "L"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "high-tom",
+        disabled: "true"
+      }, "K"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "hi-hat",
+        disabled: "true"
+      }, "A"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "crash",
+        disabled: "true"
+      }, "S"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "ride",
+        disabled: "true"
+      }, "Space"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "crash-2",
+        disabled: "true"
+      }, "D"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        id: "record",
+        disabled: "true"
+      }, "R"));
+    }
+  }]);
+
+  return DrumKit;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Legend; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+var Legend = /*#__PURE__*/function (_Component) {
+  _inherits(Legend, _Component);
+
+  var _super = _createSuper(Legend);
+
+  function Legend() {
+    _classCallCheck(this, Legend);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Legend, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        id: "legend"
+      }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("table", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("th", null, "Keys"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("th", null, "Sounds")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "A"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Hi-Hat")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "F"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Snare")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "J"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Bass")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "S"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Crash")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "K"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "High Tom")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "L"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Medium Tom")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, ";"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Low tom")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "D"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Crash II")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Space"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Ride")), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("tr", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "R"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("td", null, "Record"))));
+    }
+  }]);
+
+  return Legend;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = Title;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+function Title() {
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    id: "title"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, "The Interactive Drum Kit"), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h5", null, "By Nicholas Heo"));
+}
 
 /***/ })
 /******/ ]);

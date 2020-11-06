@@ -3,11 +3,11 @@ import React, { Component } from "react";
 export default class Legend extends Component {
   render() {
     return (
-      <div>
+      <div id="legend">
         <table>
           <tr>
-            <th>Key</th>
-            <th>Sound</th>
+            <th>Keys</th>
+            <th>Sounds</th>
           </tr>
           <tr>
             <td>A</td>
