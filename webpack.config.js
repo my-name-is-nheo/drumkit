@@ -19,6 +19,10 @@ module.exports = {
         },
       },
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
+      {
+        test: /\.(mp3|wav)$/,
+        loader: "file-loader",
+      },
     ],
   },
   //,{   exclude: [/\.js$/, /\.html$/, /\.json$/, /\.ejs$/]}
